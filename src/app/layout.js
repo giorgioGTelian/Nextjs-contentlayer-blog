@@ -1,5 +1,7 @@
 import './globals.css'
 import { Inter, Manrope } from 'next/font/google'
+import { cx } from '../utils' // <-- this is the new import other option @/utils
+import Header from '@/components/Header'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: "--font-in" })
 
@@ -15,12 +17,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body 
       className={cx(inter.variable, manrope.variable,
-        "bg-light dark:bg-dark",
-        "text-gray dark:text-gray-light",
-        "transition-colors duration-200 ease-in-out",
-        "font-mr",
+        "bg-light dark:bg-dark transition-colors duration-200 ease-in-out font-mr "
       )}
-      >{children}
+      >
+        <Header />
+        {children}
       
       </body>
     </html>
