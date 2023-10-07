@@ -1,7 +1,20 @@
 {
   "compilerOptions": {
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@components/*": ["./components/*"],
+      "@pages/*": ["./pages/*"],
+      "@styles/*": ["./styles/*"],
+      "@utils/*": ["./utils/*"],
+      "@hooks/*": ["./hooks/*"],
+      "@services/*": ["./services/*"],
+      "@assets/*": ["./assets/*"],
+      "@constants/*": ["./constants/*"],
+      "@types/*": ["./types/*"],
+      "@context/*": ["./context/*"],
+      "@config/*": ["./config/*"],
+      "@mocks/*": ["./mocks/*"],
+      "contentlayer/generated/*": ["./.contentlayer/generated"],
     }
   }
 }
