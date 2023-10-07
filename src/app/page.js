@@ -1,7 +1,9 @@
 import Image from 'next/image'
+import {allBlogs} from "../../.contentlayer/generated"
 
 export default function Home() {
   return (
+    console.log(allBlogs),
     <main className="flex flex-col items-center justify-center">
       
     </main>
