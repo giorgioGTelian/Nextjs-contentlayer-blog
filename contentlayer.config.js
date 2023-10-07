@@ -23,7 +23,7 @@ const Blog = defineDocumentType(() => ({
                 type: 'string',
                 required: true,
             },
-            image: { type: "string", required: true },
+            image: { type: "string" },
             isPublished: {
                 type: 'boolean',
                 default: true,
@@ -37,11 +37,13 @@ const Blog = defineDocumentType(() => ({
                 of: { type: 'string' },
             },
         },
-        url_path: {
-            type: 'string',
-            resolve: (doc) => `/blog/${doc._raw.flattenedPath}`,
+        computedFields: {
+            url: {
+                type: "string",
+                resolve: (doc) => `/blogs/${doc._raw.flattenedPath}`,
+                },
         },
-    }))
+    }));
 
 export default makeSource({
   /* options */
