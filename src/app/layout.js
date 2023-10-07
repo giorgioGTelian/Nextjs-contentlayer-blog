@@ -17,7 +17,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body 
       className={cx(inter.variable, manrope.variable,
-        "bg-light dark:bg-dark transition-colors duration-200 ease-in-out font-mr "
+        "bg-light  transition-colors duration-200 ease-in-out font-mr " //dark:bg-dark dark:text-light
       )}
       >
         <Header />
