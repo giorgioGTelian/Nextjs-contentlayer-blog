@@ -7,7 +7,7 @@ export const sortBlogs = (blogs) => {
     return blogs
     .slice()
     .sort((a, b) => 
-    compareDesc(parseISO(a.publishAt), parseISO(b.publishAt))
+    compareDesc(parseISO(a.publishedAt), parseISO(b.publishedAt))
     );
 };
 export const getBlogUrl = (slug) => {
