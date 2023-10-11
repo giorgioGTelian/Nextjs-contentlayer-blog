@@ -1,4 +1,5 @@
 import { sortBlogs } from '@/src/utils';
+import Image from 'next/image';
 import React from 'react'
 
 const FeaturedPosts = ({blogs}) => {
@@ -10,6 +11,14 @@ const FeaturedPosts = ({blogs}) => {
             </h2>
             <div className='grid grid-cols-2 grid-rows-2 gap-6 mt-16'>
                 <article className='flex flex-col items-start justify-start'>
+                    <Image src={sortedBlogs[0].image.filePath.replace("../public", "")} 
+                    alt={blogs.title}
+                    placeholder={'blur'}
+                    blurDataURL={sortedBlogs[0].image.blurhashDataUrl}
+                    className='w-full h-full object-center object-cover rounded-3xl -z-10'
+                    width={500}
+                    height={500}
+                    />
                     <h3 className='text-2xl font-bold'>
                         {sortedBlogs[1].title}
                     </h3>
