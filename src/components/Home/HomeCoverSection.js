@@ -12,7 +12,7 @@ const HomeCoverSection = ({blogs}) => {
     return (
         <div className='w-full inline-block'>
         <article className=' flex flex-col items-start justify-end mx-10 relative h-[85vh]'> 
-            <div className='absolute top-0 left-0 bottom-0 right-0 h-full bg-gradient-to-b from-transparent from-0% to-dark rounded-3xl z-0'/>
+            <div className='absolute top-0 left-0 bottom-0 right-0 h-full bg-gradient-to-b from-transparent from-0% to-dark/90 rounded-3xl z-0'/>
                 <Image src={blog.image.filePath.replace("../public", "")} 
                 alt={blog.title} placeholder='blur' 
                 blurDataURL={blog.image.blurhashDataUrl} fill
@@ -23,10 +23,16 @@ const HomeCoverSection = ({blogs}) => {
                         <p className='text-xl text-white'>{blog.tags[0]}</p>
                     </Link> */}
                     <Tag link={`/categories/${blog.tags[0]}`} name={blog.tags[0]} className='mb-4'/>
-                    <Link href={`/blog/${blog.url}`}>
-                        <h1 className='text-5xl font-bold text-white'>{blog.title}</h1>
+                    <Link href={`/blog/${blog.url}`} className='mt-6'>
+                        <h1 className='text-5xl font-bold text-white'>
+                            <span className='bg-gradient-to-r from-accent to-accent bg-[length:0px_6px] hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500'> 
+                                {blog.title} 
+                            </span>
+                        </h1>
                     </Link>
-                        <p className='text-2xl text-white'>{blog.description}</p>
+                        <p className='text-2xl text-white inline-block mt-4 font-in'>
+                            {blog.description}
+                        </p>
                 </div>
         </article>
         </div>
