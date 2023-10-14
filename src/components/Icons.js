@@ -402,12 +402,13 @@ export default LinkedinIcon
             );
         };
         
-    export const WebsiteSVG = (props) => (
+    export const WebsiteSVG = ({className, ...rest}) => (
     <svg
         xmlns="http://www.w3.org/2000/svg"
         xmlSpace="preserve"
         viewBox="0 0 512 512"
-        {...props}
+        className={cx("w-full h-auto", className)}
+            {...rest}
     >
         <path d="M0 57.332h512v397.336H0z" />
         <circle

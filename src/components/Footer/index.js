@@ -34,13 +34,13 @@ const Footer = ({scrollToTop}) => {
                 </form>
                 <div className='flex justify-center items-center mt-4'>
                     <a href='https://www.buymeacoffee.com/giorgiopros' target='_blank' rel="noreferrer" className='mx-2'>
-                        <CoffeeSvg className=" hover:scale-125  transi ease duration-200"/>
+                        <CoffeeSvg className=" hover:scale-125  transi ease duration-200 w-8 h-8"/>
                     </a>
                     <a href='https://codepen.io/giorgioGTelian' target='_blank' rel="noreferrer" className='mx-2'>
-                        <CodePenSvg className=" hover:scale-125  transi ease duration-200"/>
+                        <CodePenSvg className=" hover:scale-125  transi ease duration-200 w-8 h-8"/>
                     </a>
                     <a href='http://programmer.altervista.org/' target='_blank' rel="noreferrer" className='mx-2'>
-                        <WebsiteSVG className=" hover:scale-125  transi ease duration-200"/>
+                        <WebsiteSVG className=" hover:scale-125  transi ease duration-200 w-8 h-8"/>
                     </a>
                 </div>
                 <div className='mt-4 text-sm w-full realtive border-t border-solid border-light py-6 px-8 flex flex-row items-center justify-between'>
