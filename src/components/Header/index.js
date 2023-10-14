@@ -7,9 +7,9 @@ const Header = () => {
     <header className="w-full p-4 px-10 flex items-center justify-between">
         <Logo />
         <div>
-            <a href='http://' className='inline-block w-6 h-6 mr-4'>
+            <a href='https://www.linkedin.com/in/giorgio-t-518b28100/' className='inline-block w-6 h-6 mr-4'>
                 <LinkedinIcon className=" hover:scale-125  transi ease duration-200"/></a>
-            <a href='http://' className='inline-block w-6 h-6 mr-4'>
+            <a href='https://github.com/giorgioGTelian' className='inline-block w-6 h-6 mr-4'>
                 <GithubIcon className=" hover:scale-125 transi ease duration-200"/></a>
         </div>
         <nav className='w-max py-3 px-8 border border-solid 
