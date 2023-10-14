@@ -2,6 +2,7 @@ import './globals.css'
 import { Inter, Manrope } from 'next/font/google'
 import { cx } from '../utils' // <-- this is the new import other option @/utils
 import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 const inter = Inter({ subsets: ['latin'], display: 'swap', variable: "--font-in" })
 
@@ -22,7 +23,7 @@ export default function RootLayout({ children }) {
       >
         <Header />
         {children}
-      
+        <Footer />
       </body>
     </html>
   )
