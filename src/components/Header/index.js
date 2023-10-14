@@ -14,7 +14,7 @@ const Header = () => {
         </div>
         <nav className='w-max py-3 px-8 border border-solid 
         border-dark rounded-full font-medium capitalize flex 
-        items-center bg-light/80 backdrop-blur-sm '>
+        items-center bg-light/80 backdrop-blur-sm z-50'>
             <Link href="/" className='mr-2'>Home</Link>
             <Link href="/about" className='mr-2'>About</Link>
             <Link href="/contact" className='mr-2'>Contact</Link>

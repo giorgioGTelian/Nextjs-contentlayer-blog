@@ -16,7 +16,7 @@ const RecentPosts = ({blogs}) => {
                 </button>
             </div>
 
-            <div className='grid grid-cols-3 grid-rows-3 gap-16 mt-16'>
+            <div className='grid grid-cols-3 grid-rows-3 gap-16 mt-16 group'>
                 {
                     sortedBlogs.slice(5, 11).map((blog, index) => {
                         return <article key={`${index}`} className='col-span-1 row-span-1 relative'>
@@ -25,7 +25,7 @@ const RecentPosts = ({blogs}) => {
                             alt={blog.title}
                             placeholder={'blur'}
                             blurDataURL={blog.image.blurhashDataUrl}
-                            className='object-center object-cover rounded-xl -z-10'
+                            className='object-center object-cover rounded-xl -z-10 '
                             width={700}
                             height={700}
                             />
