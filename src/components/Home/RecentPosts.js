@@ -19,7 +19,39 @@ const RecentPosts = ({blogs}) => {
             <div className='grid grid-cols-3 grid-rows-3 gap-16 mt-16'>
                 {
                     sortedBlogs.slice(5, 11).map((blog, index) => {
-                        <article className='group flex flex-col items-start justify-start'>
+                        return <article key={`${index}`} className='col-span-1 row-span-1 relative'>
+                    {/* fill each blog layout with a different blog following sortedBlogs.slice(5, 11).map((blog, index)  */}
+                            <Image src={blog.image.filePath.replace("../public", "")} 
+                            alt={blog.title}
+                            placeholder={'blur'}
+                            blurDataURL={blog.image.blurhashDataUrl}
+                            className='w-full h-full object-center object-cover rounded-3xl -z-10'
+                            width={500}
+                            height={500}
+                            />
+                            <Link href={`/blog/${blog.url}`}>
+                            <h3 className='text-2xl font-bold'>
+                                <span className='bg-gradient-to-r from-accent to-accent bg-[length:0px_6px] hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500'>
+                                    {blog.title}
+                                </span>
+                            </h3>
+                            </Link>
+                            <p className='text-xl mt-4 invisible group-hover:visible'>
+                                {blog.description}
+                            </p>
+
+                    </article>
+                    })
+                }
+            </div>
+        </section>
+    );
+};
+
+export default RecentPosts
+
+/*
+<article className='group flex flex-col items-start justify-start'>
                             <Image src={blog.image.filePath.replace("../public", "")} 
                             alt={blog.title}
                             placeholder={'blur'}
@@ -39,12 +71,4 @@ const RecentPosts = ({blogs}) => {
                                 {blog.description}
                             </p>
                         </article>
-                    })
-
-                };
-            </div>
-        </section>
-    )
-}
-
-export default RecentPosts
+*/
