@@ -18,7 +18,7 @@ const RecentPosts = ({blogs}) => {
 
             <div className='grid grid-cols-3 grid-rows-3 gap-16 mt-16 group'>
                 {
-                    sortedBlogs.slice(0, 11).map((blog, index) => {
+                    sortedBlogs.slice(2, 11).map((blog, index) => {
                         return <article key={`${index}`} className='col-span-1 row-span-1 relative'>
                     {/* fill each blog layout with a different blog following sortedBlogs.slice(5, 11).map((blog, index)  */}
                             <Image src={blog.image.filePath.replace("../public", "")} 
