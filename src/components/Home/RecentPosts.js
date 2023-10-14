@@ -25,9 +25,9 @@ const RecentPosts = ({blogs}) => {
                             alt={blog.title}
                             placeholder={'blur'}
                             blurDataURL={blog.image.blurhashDataUrl}
-                            className='w-full h-full object-center object-cover rounded-3xl -z-10'
-                            width={500}
-                            height={500}
+                            className='object-center object-cover rounded-xl -z-10'
+                            width={700}
+                            height={700}
                             />
                             <Link href={`/blog/${blog.url}`}>
                             <h3 className='text-2xl font-bold'>
@@ -36,7 +36,7 @@ const RecentPosts = ({blogs}) => {
                                 </span>
                             </h3>
                             </Link>
-                            <p className='text-xl mt-4 invisible group-hover:visible'>
+                            <p className='text-xl mt-4'>
                                 {blog.description}
                             </p>
 
