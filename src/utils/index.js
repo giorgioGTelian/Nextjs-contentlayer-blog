@@ -13,3 +13,10 @@ export const sortBlogs = (blogs) => {
 export const getBlogUrl = (slug) => {
     return `/blog/${slug}`
 };
+
+export const scrollToTop = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth', // Add smooth scrolling behavior
+        });
+    };

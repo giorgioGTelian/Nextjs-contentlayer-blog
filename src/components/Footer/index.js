@@ -2,13 +2,8 @@ import React from 'react'
 import Link from 'next/link';
 import { ArrowUp } from '../Icons';
 
-const Footer = () => {
-    const scrollToTop = () => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth', // Add smooth scrolling behavior
-            });
-        };
+const Footer = ({scrollToTop}) => {
+    
     return (
         <footer className='w-full mt-32 px-32 flex flex-col items-center justify-center'>
             <div className='flex w-full justify-between'>
@@ -17,8 +12,7 @@ const Footer = () => {
                 </h3>
                 
 
-                <button className='inline-block font-medium text-accent text-lg'>
-                    <Link href={"#top"} />
+                <button className='inline-block font-medium text-accent text-lg' onClick={scrollToTop}>
                     <ArrowUp />
                 </button>
             </div>
