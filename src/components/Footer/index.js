@@ -25,12 +25,12 @@ const Footer = ({scrollToTop}) => {
                 © 2023 CodeBucks. All rights reserved.<br />
                 Made with ❤ by GTElian<br />
                 </p>
-                <form onSubmit={handleSubmit(onSubmit)} className='mt-6 min-w-[384px] flex items-stretch bg-light p-2 rounded mx04'>
-                    <input type="text" placeholder="Name" {...register("Name", {required: true})} />
-                    <input type="email" placeholder="Email " {...register("Email ", {required: true})} />
+                <form onSubmit={handleSubmit(onSubmit)} className='mt-6 min-w-[384px] flex items-stretch p-2 rounded mx04'>
+                    <input type="text" placeholder="Name" {...register("Name", {required: true})} className='w-full bg-transparent text-light focus:border-dark focus:ring-0 border-0 border-b mr-2 pb-1'/>
+                    <input type="email" placeholder="Email " {...register("Email ", {required: true})} className='w-full bg-transparent text-light focus:border-dark focus:ring-0 border-0 border-b mr-2 pb-1'/>
 
-                    <input type="submit" placeholder='Send'/>
-                    </form>
+                    <input type="submit" placeholder='Send' className='bg-dark text-light cursor-pointer font-medium rounded px-5 py-1'/>
+                </form>
 
             </footer>
     )
