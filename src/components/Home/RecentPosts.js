@@ -29,7 +29,7 @@ const RecentPosts = ({blogs}) => {
                             width={700}
                             height={700}
                             />
-                            <Link href={`/blog/${blog.url}`}>
+                            <Link href={`${blog.url}`}>
                             <h3 className='text-2xl font-bold'>
                                 <span className='bg-gradient-to-r from-accent to-accent bg-[length:0px_6px] hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500'>
                                     {blog.title}
@@ -50,7 +50,7 @@ const RecentPosts = ({blogs}) => {
 
 export default RecentPosts
 
-/*
+/* old stupid giorgio way of doing things
 <article className='group flex flex-col items-start justify-start'>
                             <Image src={blog.image.filePath.replace("../public", "")} 
                             alt={blog.title}
