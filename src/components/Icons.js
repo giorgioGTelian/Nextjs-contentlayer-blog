@@ -407,7 +407,7 @@ export default LinkedinIcon
         xmlns="http://www.w3.org/2000/svg"
         xmlSpace="preserve"
         viewBox="0 0 512 512"
-        className={cx("w-full h-auto", className)}
+        className={cx("w-15 h-auto", className)}
             {...rest}
     >
         <path d="M0 57.332h512v397.336H0z" />
@@ -491,8 +491,8 @@ export default LinkedinIcon
         export const CoffeeSvg = (props) => (
             <svg
                 xmlns="http://www.w3.org/2000/svg"
-                width={800}
-                height={800}
+                width={512}
+                height={512}
                 viewBox="0 0 32 32"
                 {...props}
             >
