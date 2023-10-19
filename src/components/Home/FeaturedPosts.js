@@ -20,7 +20,7 @@ const FeaturedPosts = ({blogs}) => {
                     width={500}
                     height={500}
                     />
-                    <Link href={`/blog/${sortedBlogs[1].url}`}>
+                    <Link href={`${sortedBlogs[1].url}`}>
                     <h3 className='text-2xl font-bold'>
                         <span className='bg-gradient-to-r from-accent to-accent bg-[length:0px_6px] hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500'>
                             {sortedBlogs[1].title}
@@ -40,7 +40,7 @@ const FeaturedPosts = ({blogs}) => {
                     width={500}
                     height={500}
                     />
-                    <Link href={`/blog/${sortedBlogs[2].url}`}>
+                    <Link href={`${sortedBlogs[2].url}`}>
                     <h3 className='text-2xl font-bold'>
                         <span className='bg-gradient-to-r from-accent to-accent bg-[length:0px_6px] hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500'>
                             {sortedBlogs[2].title}
@@ -61,7 +61,7 @@ const FeaturedPosts = ({blogs}) => {
                     width={1000}
                     height={500}
                     />
-                    <Link href={`/blog/${sortedBlogs[3].url}`}>
+                    <Link href={`${sortedBlogs[3].url}`}>
                         <h3 className='text-2xl font-bold'>
                             <span className='bg-gradient-to-r from-accent to-accent bg-[length:0px_6px] hover:bg-[length:100%_6px] bg-left-bottom bg-no-repeat transition-[background-size] duration-500'>
                                 {sortedBlogs[3].title}
